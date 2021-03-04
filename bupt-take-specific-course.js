@@ -1,9 +1,10 @@
+// https://github.com/Durden-T/BUPTtakeCourse
 var courses = [
     //'下一代Internet技术与协议',
     //'体育专项(下)[男]',
     //'3D打印创新实践（双创）',
 ];
-//抢课时间间隔，单位为ms
+//抢课时间间隔，单位为ms，抢课50ms, 捡漏300ms
 var interval = 300;
 //禁止改动
 var targets = [];
