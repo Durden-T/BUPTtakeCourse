@@ -30,7 +30,9 @@ function getCourses() {
 
 function processData(resp) {
     let data = $.parseJSON(resp).aaData;
-    for (let course of data) if (courses.indexOf(course.kcmc) != -1) targets.push([course.kch, course.jx0404id]);
+    for (let course of data)
+        if (courses.indexOf(course.kcmc) != -1)
+            targets.push([course.kch, course.jx0404id]);
 }
 
 function takeCourses(targets) {
@@ -57,4 +59,3 @@ function stop() {
 }
 
 start();
-
