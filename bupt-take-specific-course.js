@@ -36,14 +36,16 @@ function processData(resp) {
 }
 
 function takeCourses(targets) {
-    if (!targets.length) getCourses();
-    for (let target of targets) $.ajax({
-        url: "/jsxsd/xsxkkc/xxxkOper",
-        data: {
-            kcid: target[0],
-            jx0404id: target[1]
-        }
-    });
+    if (!targets.length)
+        getCourses();
+    for (let target of targets)
+        $.ajax({
+            url: "/jsxsd/xsxkkc/xxxkOper",
+            data: {
+                kcid: target[0],
+                jx0404id: target[1]
+            }
+        });
 
     console.log('running......');
 }
